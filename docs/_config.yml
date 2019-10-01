@@ -1,10 +1,14 @@
 defaults:
     - scope:
         path: ""
-    values:
+        source: "./docs"
+        values:
         layout: "default"
 
 exclude:
+    - Makefile
+    - run.sh
+    - gitmodules/
     - "*.config.js"
     - "package*.json"
     - "assets"

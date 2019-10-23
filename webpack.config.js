@@ -10,7 +10,7 @@ module.exports = {
         docs: path.resolve(__dirname, './assets/index.css'),
     },
     output: {
-        path: path.resolve(__dirname, './dist/'),
+        path: path.resolve(__dirname, './docs/dist/'),
         filename: isProduction ? '[name].[hash].js' : '[name].js',
         chunkFilename: isProduction ? '[id].[hash].js' : '[id].js',
     },

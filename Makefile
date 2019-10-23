@@ -1,14 +1,14 @@
 help:
 	@echo "see: https://blog.frankdejonge.nl/setting-up-docs-with-tailwind-css-and-github-pages/"
 jekyll-serve:
-	jekyll clean
-	jekyll serve --config docs/_config.yml
+	cd docs && jekyll serve
 jekyll-build:
-	jekyll clean
-	jekyll build --config docs/_config.yml
-	tree _site
+	cd docs && jekyll build
 webpack-build:
 	NODE_ENV=development npx webpack
+build: webpack-build jekyll-build
+clean:
+	rm -rf docs/{_data,dist,_site}
 
 # "prod": "NODE_ENV=production npx webpack",
 # "dev": "NODE_ENV=development npx webpack",

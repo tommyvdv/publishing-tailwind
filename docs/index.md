@@ -1,6 +1,6 @@
 ---
 permalink: /  
-title: Welcome to my docs  
+title: "-bash: run: command not found"
 ---
 
 #!/bin/bash

@@ -1,0 +1,16 @@
+---
+permalink: manifest.json
+layout: none
+---
+
+{
+    "name": "publishing-tailwind",
+    "manifest_version": 2,
+    "display": "minimal-ui",
+    "start_url": "./index.html",
+    "icons": [{
+        "src": "assets/image/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}

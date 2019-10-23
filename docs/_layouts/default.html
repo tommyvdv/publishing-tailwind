@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-<link rel="manifest" href="manifest.json">
-<link rel="shortcut icon" type="image/png" href="assets/image/favicon.png">
-<link rel="stylesheet" href="{{ site.data.manifest['docs.css'] }}">
+<link rel="manifest" href="{{ 'manifest.json' | relative_url }}">
+<link rel="shortcut icon" type="image/png" href="{{ 'assets/image/favicon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ site.data.manifest['docs.css'] | relative_url }}">
 <title>Document</title>
 </head>
 <body class="
